@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/sendmessage"
+        android:text="SendMessage"
+        android:onClick="sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/udp"
+        android:text="UDP Connection"
+        android:onClick="sendUdpConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/checkNetwork"
+        android:text="Check Network"
+        android:onClick="checkNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendmessage"
+        android:onClick="connect"
+        android:text="Connect" />
+
+    <ListView
+        android:layout_below="@+id/connect"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ListView
+        android:visibility="gone"
+        android:layout_below="@+id/connect"
+        android:id="@+id/dataList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
